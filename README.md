@@ -4,6 +4,7 @@ Easily swap materials and physics on custom blocks in TM2 Stadium.
 
 __Warning__: You first need to create the custom blocks, including all variants you want (even if they are the same as the starting block) before you can modify them. This program will not create the custom block itself, it needs to already be present.
 
+
 ### Usage
 
     -r, --information    Only display information about the block(s), e.g materials used, without saving a new version.
@@ -25,6 +26,14 @@ Files will be saved under the same path + new material and physics. Eg. ```/path
 Example to change all road textures into grass textures with grass physics for all Block files in a given folder:
 
     $ ./Autoblock.exe -i "C:\\Users\\You\\Documents\\Maniaplanet\\Blocks\\Base\\1-1" -m "StadiumRoad" -o "StadiumGrass" -p "Grass"
+
+#### Creating a custom block
+
+Place the block you want to make into a custom block in the map editor. While still in the block menu (F2), click on the +, then on the specified block.
+
+In the menu that just appeared, click the + on customized variants until all the customized variants are there (if one appears in red, you can delete it and stop).
+
+For each custom variant, click on the folder icon where it says empty. Then just click on the back arrow and select 'Keep Changes'. Do this for all custom variants, then save your new custom block. This is the .Block.Gbx that you will give as input to the above program using ```-i```.
 
 
 ### Resources
