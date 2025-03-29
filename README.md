@@ -2,6 +2,8 @@
 
 Easily swap materials and physics on custom blocks in TM2 Stadium.
 
+__Warning__: You first need to create the custom block including all variants you want before you can modify it. This program will not create the custom block itself, it needs to already be present.
+
 ### Usage:
 
     -r, --information    Only display information about the block(s), e.g materials used, without saving a new version.
