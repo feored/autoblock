@@ -31,9 +31,13 @@ Example to change all road textures into grass textures with grass physics for a
 
 Place the block you want to make into a custom block in the map editor. While still in the block menu (F2), click on the +, then on the specified block.
 
-In the menu that just appeared, click the + on customized variants until all the customized variants are there (if one appears in red, you can delete it and stop).
+In the menu that just appeared, click the + on customized variants until all the customized variants are there (if one appears in red, you can delete it and stop). If asked, discard changes. Most blocks have at least one ground and air variant, but some can have less or more.
 
-For each custom variant, click on the folder icon where it says empty. Then just click on the back arrow and select 'Keep Changes'. Do this for all custom variants, then save your new custom block. This is the .Block.Gbx that you will give as input to the above program using ```-i```.
+For each custom variant, click on the folder icon where it says empty, then just click on the back arrow again. Do this for all custom variants, then save your new custom block. This is the .Block.Gbx that you will give as input to the above program using ```-i```.
+
+Tip: Once you've finished your map, you can delete the variations you don't need to save on space.
+
+You need to restart Trackmania for edited blocks to appear in the editor.
 
 
 ### Resources

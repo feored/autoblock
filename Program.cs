@@ -28,8 +28,6 @@ public class Autoblock
         [Option('p', "physics", Required = false, HelpText = "If set, physics surface to set for the material e.g Grass, Ice, Metal, etc")]
         public string Physics { get; set; }
 
-        /*Enum.TryParse("Active", out StatusEnum myStatus);*/
-
     }
 
 
@@ -44,14 +42,14 @@ public class Autoblock
             if (customVariant == null || customVariant.Crystal == null || customVariant.Crystal.Layers.Count == 0)
             {
                 Console.WriteLine("Skipping empty layer...");
-                break;
+                continue;
             }
             Console.WriteLine("Layers: ", customVariant?.Crystal?.Layers.Count);
             var materials = customVariant?.Crystal?.Materials;
             if (materials == null || materials.Count < 1)
             {
                 Console.WriteLine("Skipping empty materials list...");
-                break;
+                continue;
             }
             foreach (var mat in materials)
             {
