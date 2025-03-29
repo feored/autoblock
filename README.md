@@ -24,7 +24,7 @@ Files will be saved under the same path + new material and physics. Eg. ```/path
 
 Example to change all road textures into grass textures with grass physics for all Block files in a given folder:
 
-    $ dotnet Autoblock.dll -i "C:\\Users\\You\\Documents\\Maniaplanet\\Blocks\\Base\\1-1" -m "StadiumRoad" -o "StadiumGrass" -p "Grass"
+    $ ./Autoblock.exe -i "C:\\Users\\You\\Documents\\Maniaplanet\\Blocks\\Base\\1-1" -m "StadiumRoad" -o "StadiumGrass" -p "Grass"
 
 
 ### Resources
