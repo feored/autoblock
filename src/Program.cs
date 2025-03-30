@@ -91,8 +91,6 @@ namespace Autoblock
                     // "window.external.sendMessage(message: string)
 
                     // Handle the message
-                    System.Diagnostics.Debug.WriteLine("KFDLFKDSLFDSMFDSdfs");
-                    System.Diagnostics.Debug.WriteLine("RECEIVED DEBUG MESSAGEE!!");
                     HandleMessage(window, message);
                     // Send a message back the to JavaScript event handler.
                     // "window.external.receiveMessage(callback: Function)"

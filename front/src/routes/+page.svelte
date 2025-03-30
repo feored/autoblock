@@ -167,11 +167,11 @@
 </script>
 
 <main>
-	<fieldset>
-		<legend>Blocks</legend>
+	<article>
+		<header><h4>Select Blocks</h4></header>
 		<label for="blocks">Choose one or multiples blocks to edit (.Block.Gbx)</label>
 		<input type="file" id="blocks" accept=".Block.Gbx" bind:files={blocks_filelist} multiple />
-	</fieldset>
+	</article>
 	{#if block_data.length > 0}
 		<article>
 			<header>
