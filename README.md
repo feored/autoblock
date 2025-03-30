@@ -13,21 +13,21 @@ Launch autoblock.exe, then open one or several custom blocks (.Block.Gbx) files.
 For each block opened, a table will display the materials that already used within that block.
 A material is composed a link (the textures, the visual aspect of that material) and a physics layer (which controls gameplay aspects, like ice, grass, and so on).
 
-![selecting-blocks][/assets/select.png]
+![selecting-blocks](/assets/select.png)
 
 In the next section, you can add conversions from an existing material (for example, the center of the normal road block is usually a material composed of the link StadiumRoad, and the physics Layer Asphalt). If you want to make the center of road blocks into grass instead, choose StadiumGrass for the New Layer and Grass for the New Physics, then hit convert.
 
-![converting-blocks][/assets/convert.png]
+![converting-blocks](/assets/convert.png)
 
 Once the files are converted, you can download them and save them in your Maniaplanet/Blocks folder.
 
 You need to restart Trackmania for blocks placed inside the Blocks folder to appear in the editor.
 
-![grass-blocks][/assets/grass.png]
+![grass-blocks](/assets/grass.png)
 
 Tip: Because all variations of each block are bundled in the Base blocks, you may notice after finishing your map that the filesize is very large. To cut down on file size, you can remove the variations you don't need from the blocks you generated, by editing the custom block then hitting the red cross in front of each unused variation.
 
-![deleting-variations][/assets/delete.png]
+![deleting-variations](/assets/delete.png)
 
 #### Creating a custom block
 
