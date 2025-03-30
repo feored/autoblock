@@ -7,25 +7,27 @@ __Warning__: You first need to create the custom blocks, including all variants 
 
 ### Usage
 
-    -r, --information    Only display information about the block(s), e.g materials used, without saving a new version.
+For a quick start, download [Base.zip](/assets/Base.zip). This folder contains as many premade custom blocks as I've had the time to make.
 
-    -i, --input          Required. Path to the .gbx file to modify or to a folder if multiple .gbx files are to processed
+Launch autoblock.exe, then open one or several custom blocks (.Block.Gbx) files.
+For each block opened, a table will display the materials that already used within that block.
+A material is composed a link (the textures, the visual aspect of that material) and a physics layer (which controls gameplay aspects, like ice, grass, and so on).
 
-    -m, --materialIn     Required. Material link that will be replaced e.g StadiumRoad or StadiumGrass
+![selecting-blocks][/assets/select.png]
 
-    -o, --materialOut    Required. Material link to replace with e.g StadiumRoad or StadiumGrass
+In the next section, you can add conversions from an existing material (for example, the center of the normal road block is usually a material composed of the link StadiumRoad, and the physics Layer Asphalt). If you want to make the center of road blocks into grass instead, choose StadiumGrass for the New Layer and Grass for the New Physics, then hit convert.
 
-    -p, --physics        If set, physics surface to set for the material e.g Grass, Ice, Metal, etc
+![converting-blocks][/assets/convert.png]
 
-    --help               Display this help screen.
+Once the files are converted, you can download them and save them in your Maniaplanet/Blocks folder.
 
-    --version            Display version information.
+You need to restart Trackmania for blocks placed inside the Blocks folder to appear in the editor.
 
-Files will be saved under the same path + new material and physics. Eg. ```/path/to/your/block.Block.Gbx -> /path/to/your/block_StadiumGrass_Grass.Block.Gbx```
+![grass-blocks][/assets/grass.png]
 
-Example to change all road textures into grass textures with grass physics for all Block files in a given folder:
+Tip: Because all variations of each block are bundled in the Base blocks, you may notice after finishing your map that the filesize is very large. To cut down on file size, you can remove the variations you don't need from the blocks you generated, by editing the custom block then hitting the red cross in front of each unused variation.
 
-    $ ./Autoblock.exe -i "C:\\Users\\You\\Documents\\Maniaplanet\\Blocks\\Base\\1-1" -m "StadiumRoad" -o "StadiumGrass" -p "Grass"
+![deleting-variations][/assets/delete.png]
 
 #### Creating a custom block
 
@@ -34,14 +36,3 @@ Place the block you want to make into a custom block in the map editor. While st
 In the menu that just appeared, click the + on customized variants until all the customized variants are there (if one appears in red, you can delete it and stop). If asked, discard changes. Most blocks have at least one ground and air variant, but some can have less or more.
 
 For each custom variant, click on the folder icon where it says empty, then just click on the back arrow again. Do this for all custom variants, then save your new custom block. This is the .Block.Gbx that you will give as input to the above program using ```-i```.
-
-Tip: Once you've finished your map, you can delete the variations you don't need to save on space.
-
-You need to restart Trackmania for edited blocks to appear in the editor.
-
-
-### Resources
-
-[Materials List](/NadeoImporterMaterialLib.txt) [Where the string in parentheses in DMaterial is the value you should enter in MaterialOut]
-
-[Physics ID List](/PhysicsID.txt)

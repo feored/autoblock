@@ -6,8 +6,7 @@ project.lock.json
 nupkg/
 
 # Visual Studio Code
-.vscode/*
-!.vscode/settings.json
+.vscode/
 
 # Rider
 .idea/
@@ -20,6 +19,8 @@ nupkg/
 
 # Code Rush
 .cr/
+
+wwwroot/
 
 # User-specific files
 *.suo
