@@ -12,11 +12,11 @@ For a quick start, download [Base.zip](/assets/Base.zip) (click on View Raw). Th
 
 Launch autoblock.exe, then open one or several custom block (.Block.Gbx) files.
 For each block opened, a table will display the materials that already used within that block.
-A material is composed a link (the textures, the visual aspect of that material) and a physics layer (which controls gameplay aspects, like ice, grass, and so on).
+A material is composed of a link (the textures/visual aspect of that material) and a physics layer (which controls gameplay aspects, like ice, grass, and so on).
 
 ![selecting-blocks](/assets/select.png)
 
-In the next section, you can add conversions from an existing material (for example, the center of the normal road block is usually a material composed of the link StadiumRoad, and the physics layer Asphalt). If you want to make the center of road blocks into grass instead, choose StadiumGrass for the New Link and Grass for the New Physics, then hit convert.
+In the next section, you can add conversions from an existing material to a different(for example, the center of the normal road block is usually a material composed of the link StadiumRoad, and the physics layer Asphalt). If you want to make the center of road blocks into grass instead, choose StadiumGrass for the New Link and Grass for the New Physics, then hit convert.
 
 ![converting-blocks](/assets/convert.png)
 
